@@ -1,3 +1,6 @@
 
 No Remodel:
 Scratch/Collagen/NargessProject/Alignment/run_NoRemodel/run_dens0.05_Xstretch1.0_trel2e7_Frames100_tstep0.005_Nev1000_MP1.0_BP0.1_MD0.65_BD1.8_seed5
+
+No Stretch:
+Scratch/Collagen/NargessProject/Alignment/runs_Stretch/run_tStr1e5_tRel1e7_tInitRel2e5_Xtretch0.0_Frames100_tstep0.01_Nev1000_MP1.0_BP0.005_MD0.65_BD1.8_seed1/thermo.dat
