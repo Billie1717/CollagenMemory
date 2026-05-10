@@ -19,12 +19,16 @@ Stretch:
 To understand the stretch-remodel code, the script build_Stretch_SimpleAnnotated.py is a commented and simplified version of the code for readability. It is not a working version. 
 
 7s_Perturbations:
-The 7s perturbation simulations have different templates and molecule types. We introduce a new bead type which represents 7s ends which cannot bind *** SOME MORE DETAILS HERE ***
+The 7s perturbation simulations have different templates and molecule types. We introduce a new bead type which represents 7s ends which cannot bind. The new type is type 9 and a different initial config must be used which creates a number of molecules where some fraction have 'perturbed' type 9 ends. Type 9s do not participate in any binding reactions. This is opposed to type 2 which are the 'normal' 7s binding ends which have not yet bound. The templates are in the templates folder. 
+
+Ablations:
+These simulations are run on very large networks. The equilibrated input script is in Ablations/SimulationsStartFromRestartFile/. The networks are stretched, relaxed for a short time then ablated. Some simulations are also run for pure stretched networks with no ablations for benchmarking stress (Figure S3a). The templates are the same for those use in Stretch simulations.
+
+Understanding template structure:
+The bonding/unbonding of the collagen IV molecules happen via fix react and the templates. One bonding pattern will be specified by a pre, post and map template file. The pre and post specify the structure of a bonding pattern before and after the reaction occurs and the map instructs how to translate the molecule identifiers/properties from the pre to post molecule. Due to the many combinations of types of molecules, there are 100s of template patterns. More information about templates can be found: https://docs.lammps.org/fix_bond_react.html. 
+
 
 TO do (myself):
-Put templates in relevant folder(s)
-Readme for understanding the templates
-Simplified 7s script explaining the difference between this and the main script
-Ablation documentation
-Gaussian spread data analysis
-Sort data
+Put templates in relevant folder(s) (ssh from cluster)
+Gaussian spread data analysis documentation
+Sort data (cluster) > delete not used, move used to home/fs
