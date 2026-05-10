@@ -14,6 +14,11 @@ shown in Figures 3, 4 and S3.
 
 ---
 
+(Billie to do):
+1. Make quickstart usable
+2. Better instructions for 'running the simulations'
+3. Better instructions for Data processing
+
 ## Table of contents
 
 1. [Overview of the model](#overview-of-the-model)
@@ -174,7 +179,7 @@ GithubCode/
 
 - Python ≥ 3.9
 - `numpy`, `scipy`, `pandas`, `matplotlib`, `seaborn`, `jupyter`
-- AFT (Alignment by Fourier Transform) workflow — TODO: link / cite
+- AFT (Alignment by Fourier Transform) workflow — Marcotti, S. et al. (2021) 10.3389/fcomp.2021.745831
 - OVITO (for opening the `.ovito` snapshot scenes)
 
 > TODO: add an `environment.yml` or `requirements.txt`.
